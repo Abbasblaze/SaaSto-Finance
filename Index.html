@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>SaaSto-Finance</title>
+  </head>
+  <body>
+    <!-- Navigation -->
+
+    <nav class="p-3 flex bg-white justify-between items-center">
+      <a href="#" id="brand" class="flex gap-2 items-center">
+        <img
+          class="object-cover max-w-12 max-h-12"
+          src="./img/Icon.png"
+          alt="logo"
+        />
+        <span class="text-lg font-bold text-indigo-900">SaaSto</span>
+      </a>
+
+      <div id="nav-menu" class="hidden md:flex gap-8 items-center">
+        <a href="#" class="font-medium text-green-500 hover:text-green-400">
+          Demos<i class="ri-arrow-down-s-line"></i
+        ></a>
+        <a href="#" class="font-medium text-gray-700 hover:text-green-400"
+          >Features</a
+        >
+        <a href="#" class="font-medium text-gray-700 hover:text-green-400">
+          Pricing<i class="ri-arrow-down-s-line"></i
+        ></a>
+        <a href="#" class="font-medium text-gray-700 hover:text-green-400">
+          Contact<i class="ri-arrow-down-s-line"></i
+        ></a>
+      </div>
+
+      <div class="flex items-center gap-4">
+        <a href="#" class="font-medium text-green-600 hover:text-green-400"
+          >Login</a
+        >
+        <button
+          class="border border-green-400 bg-green-500 px-6 py-2 rounded-full text-white hover:bg-green-500"
+        >
+          Sign up
+        </button>
+      </div>
+
+      <button id="menu-button" class="p-2 md:hidden" onclick="handleMenu()">
+        <i class="ri-menu-line text-gray-600"></i>
+      </button>
+
+      <div
+        id="nav-dialog"
+        class="hidden fixed z-10 md:hidden bg-white inset-0 p-3"
+      >
+        <div id="nav-bar" class="flex justify-between">
+          <a href="#" id="brand" class="flex gap-2 items-center">
+            <img
+              class="object-cover max-w-12 max-h-12"
+              src="./img/Icon.png"
+              alt="logo"
+            />
+            <span class="text-lg font-bold text-indigo-900">SaaSto</span>
+          </a>
+          <button id="menu-button" class="p-2 md:hidden" onclick="handleMenu()">
+            <i class="ri-close-line text-gray-600"></i>
+          </button>
+        </div>
+        <div class="mt-6">
+          <a
+            href="#"
+            class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg"
+            >About us
+          </a>
+          <a
+            href="#"
+            class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg"
+            >Services
+          </a>
+          <a
+            href="#"
+            class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg"
+            >Blog
+          </a>
+          <a
+            href="#"
+            class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg"
+            >Contact us
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+
+    <main class="p-3 flex bg-white justify-between items-center mb-3">
+      <div class="translate-x-32 mb-auto">
+        <img src="./img/Image.png" alt="" class="hidden sm:block" />
+      </div>
+      <div class="mb-36">
+        <h1 class="font-bold text-5xl">
+          Manage Your <br />Business
+          <span class="text-green-500"> Finance <br /></span>Easily
+        </h1>
+        <p class="text-lg mt-5">
+          An enim nullam tempor sapien gravida donec <br />enim ipsum porta
+          justo congue magna at
+        </p>
+        <button
+          class="bg-green-400 hover:bg-green-500 text-white font-semibold py-2 px-4 rounded-full shadow-lg mt-10"
+        >
+          Start 14 Days Trial
+        </button>
+      </div>
+      <div class="">
+        <img src="img/Mobile Screens.png" alt="" class="hidden sm:block" />
+      </div>
+    </main>
+
+    <!-- Header Icons -->
+
+    <main>
+      <div
+        class="flex flex-wrap justify-center m-auto space-x-8 mt-5 md:mt-10 gap-14"
+      >
+        <div class="mt-8 text-center md:text-left pl-4">
+          <h2 class="text-5xl font-bold text-gray-800">115k+</h2>
+          <p class="text-gray-600 text-lg mt-5">Active user</p>
+        </div>
+
+        <div
+          class="mt-8 text-center md:text-left border-l-2 border-gray-300 pl-20"
+        >
+          <h2 class="text-5xl font-bold text-gray-800">88k</h2>
+          <p class="text-gray-600 text-lg mt-5">User passive</p>
+        </div>
+
+        <div
+          class="mt-8 text-center md:text-left border-l-2 border-gray-300 pl-20"
+        >
+          <h2 class="text-5xl font-bold text-gray-800">30%</h2>
+          <p class="text-gray-600 text-lg mt-5">Increase in user</p>
+        </div>
+
+        <div
+          class="mt-8 text-center md:text-left border-l-2 border-gray-300 pl-20"
+        >
+          <h2 class="text-5xl font-bold text-gray-800">>10k</h2>
+          <p class="text-gray-600 text-lg mt-5">Good Testimonials</p>
+        </div>
+      </div>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
